@@ -30,8 +30,6 @@ async def on_message(message):
             msgs.append(msg)
             await asyncio.sleep(3)
             await message.channel.delete_messages(msgs)
-            #await message.channel.send("No gaali coz i'm brahmachari.")
-            #await message.channel.send("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
-
-client.run("NTkzNzgyMDY0OTE5MDg1MDg5.XqFMJg.RFnvOQ_E_qYmbUElXZPfRqCB56Q")
+            
+client.run("your-token-here")
 
