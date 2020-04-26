@@ -8,11 +8,9 @@ client = discord.Client()
 @client.event
 async def on_message(message):
     
-    bad_words = ["bc", "mc", "chutiya", "lund","gand","chu","asshole","chodu","lodu","randi","loda","bhangi","fuck","fcuk","fuk","aukat"
-    ,"laude","lavde","bhangi","madarc","bhen","wtf","pikina","tf","maa ki","bsdk","rndi","gandu","mader","suck","bitch"]
+    bad_words = [] #list bad words you want to restrict.
 
-    msg_list = [" your message was deleted"," you are disguisting."," saale gaali kisko bola?", " sorry we don't speak that here. :)"," gaado nai bolvani. #peace"," yeh koi r@#dikha#a hai?",
-    " Gaandu salaa!"," <-- Ashleel hai yeh launda"]
+    msg_list = [] # list message you want to send to user in the channel.
     
     table = str.maketrans(dict.fromkeys(string.punctuation))
     content = message.content.translate(table)    
